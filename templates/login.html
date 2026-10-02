@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBAC Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h1>Restaurant Owner Login</h1>
+        <p class="subtitle">Role-based access demo</p>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form method="post">
+            <label>Login ID</label>
+            <input type="text" name="login_id" required>
+
+            <label>Password</label>
+            <input type="password" name="pwd" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="hint">
+            Sample login: <b>owner1 / owner123</b>
+        </div>
+    </div>
+</body>
+</html>

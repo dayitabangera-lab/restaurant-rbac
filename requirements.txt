@@ -1,0 +1,17 @@
+Installation
+
+Install Flask:
+
+```bash
+pip install -r requirements.txt
+```
+
+To run the application
+```bash
+python app.py
+```
+
+To run the aaplication pen your browser and visit
+```
+http://127.0.0.1:5000
+```
